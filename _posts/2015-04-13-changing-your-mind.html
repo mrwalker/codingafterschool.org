@@ -1,0 +1,136 @@
+---
+title: Changing Your Mind (Debugging)
+excerpt:
+          Do you ever change your mind?  Are you always right or do you find
+          that sometimes you've made a mistake?  One of the greatest things
+          about computer programming is that it's okay to make mistakes.  It
+          lets you try things out, fail, and try again, all the while giving
+          you feedback about how you're doing so you can keep getting closer to
+          the correct program.
+---
+
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        {% include header.html %}
+
+        <section id="main_content">
+          <h3><a class="anchor" aria-hidden="true"></a>Changing Your Mind (Debugging)</h3>
+
+          <p>
+          Do you ever change your mind?  Are you always right or do you find
+          that sometimes you've made a mistake?  One of the greatest things
+          about computer programming is that it's okay to make mistakes.  It
+          lets you try things out, fail, and try again, all the while giving
+          you feedback about how you're doing so you can keep getting closer to
+          the correct program.
+          </p>
+
+          <p>
+          Today, instead of starting from scratch to help our angry friend
+          navigate the maze, we're going to start with an existing program that
+          has a mistake.  Just like a computer programmer, we're going to call
+          this mistake a “bug”.  When we fix it, we're going to say we
+          “debugged” the program; we're squashing the bug!
+          </p>
+
+          <p>
+          Before we head over to <a href="http://studio.code.org/s/course1/stage/5/puzzle/1">Code.org</a>,
+          we're going to introduce an activity that will help us illustrate
+          programming in the real world: cup stacking.  This is just like
+          programming me and making me walk around the room, but it's a little
+          more contained and easier to study what's going on.  We'll use cup
+          stacking throughout the rest of the semester to help us get a feel
+          for ideas in programming.
+          </p>
+
+          <p>
+          First, the ground rules.  I have a stack of four cups.  I only
+          understand the instructions “up”, “down”, “right”, “left”, and
+          “flip”, which we'll write as follows:
+          </p>
+
+          <ul>
+            <li>U: up</li>
+            <li>D: down</li>
+            <li>R: right</li>
+            <li>L: left</li>
+            <li>F: flip</li>
+          </ul>
+
+          <p>
+          I'll start out with my hand on the stack of cups and take whatever
+          instructions you call out.  You'll find that we can make quite of
+          variety of cup creations, for instance:
+          </p>
+
+          <p>
+          <img src="/images/cup-stacking/three-cup-pyramid.png">
+          URRDLL, URRRRDLLLL, URRRD
+          </p>
+
+          <p>
+          <img src="/images/cup-stacking/four-cup-pyramid.png">
+          URRDLL, URRRRDLLLL, URRRFDLLL, URRRD
+          </p>
+
+          <p>
+          <img src="/images/cup-stacking/four-cup-stack.png">
+          URRDLL, URRRRDLLLL, URRFDLL, URRRRFD
+          </p>
+
+          <p>
+          But what happens if we forget an instruction?  Let's say we forgot an
+          R in the first list of instructions (see the x below).  Since we
+          don't move the final cup right enough, we wind up stacking it on top
+          of the first cup!
+          </p>
+
+          <p>
+          <img src="/images/cup-stacking/three-cup-pyramid-bug.png">
+          URRDLL, URRRRDLLLL, URRxD
+          </p>
+
+          <p>
+
+          We know how to fix this bug since we introduced it: just add the R
+          back to the list of instructions.  In our 
+          <a href="http://studio.code.org/s/course1/stage/5/puzzle/1">exercises</a>
+          today, we may have missing instructions, too many instructions, or
+          instructions that are simply wrong.  To debug, we can add, remove, or
+          replace instructions.
+          </p>
+
+          <hr>
+
+          <p>
+          Cup stacking images taken from <a href="http://thinkersmith.org/">Thinkersmith</a>'s Traveling
+          Circuits lesson <a href="http://csedweek.org/files/CSEDrobotics.pdf">"My Robotic Friends"</a>.
+          The lession material is heavily adapted for kindergartners for use as
+          an activity in Coding After School.
+          </p>
+
+          <p>
+          <a rel="license"
+            href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img
+            alt="Creative Commons License" style="border-width:0"
+            src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"
+            /></a><br />Thinkersmith's material is licensed under a <a rel="license"
+            href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+            Commons Attribution-NonCommercial-ShareAlike 4.0 International
+            License</a>.
+          <p>
+
+        </section>
+
+        {% include footer.html %}
+
+      </div>
+    </div>
+  </body>
+</html>
