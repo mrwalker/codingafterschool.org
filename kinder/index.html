@@ -1,0 +1,30 @@
+---
+title: Kindergarten
+---
+
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        {% include header.html %}
+
+        <section id="main_content">
+
+        {% for page in site.categories.kinder reversed %}
+          <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
+          <p>{{ page.excerpt }}</p>
+          <p><a href="{{ page.url }}">Read more...</a></p>
+        {% endfor %}
+
+        </section>
+
+        {% include footer.html %}
+
+      </div>
+    </div>
+  </body>
+</html>
