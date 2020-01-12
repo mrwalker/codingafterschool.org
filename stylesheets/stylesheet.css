@@ -68,10 +68,6 @@ header {
   padding-bottom: 25px;
 }
 
-header a {
-  color: #303030;
-}
-
 header h1 {
   font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 48px; font-weight: 900;
@@ -86,26 +82,6 @@ header h2 {
   line-height: 1.3;
   color: #aaa;
   letter-spacing: -1px;
-}
-
-prompt {
-  padding-top: 35px;
-  padding-bottom: 25px;
-}
-
-prompt h2 {
-  font-size: 48px;
-  font-weight: normal;
-  line-height: 1.3;
-  color: #aaa;
-  letter-spacing: -1px;
-  text-align: center;
-  margin-top: 120px;
-}
-
-small {
-  font-size: 12px;
-  margin-bottom: 120px;
 }
 
 #container {
@@ -123,7 +99,7 @@ small {
 }
 
 #downloads {
-  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 a.button {
@@ -173,19 +149,11 @@ a.button:hover {
 a.button span {
   display: block;
   height: 23px;
-  text-align: center;
+  padding-left: 50px;
 }
 
-#kinder-button {
-  background: #ddd url(../images/letter-k.jpg) 16px 4px/40px 40px no-repeat;
-}
-
-#first-button {
-  background: #ddd url(../images/number-1.jpg) 16px 4px/40px 40px no-repeat;
-}
-
-#second-button {
-  background: #ddd url(../images/number-2.jpg) 16px 4px/40px 40px no-repeat;
+.button-bg span {
+  background: transparent url(../images/body-bg.png) 12px 50% no-repeat;
 }
 
 code, pre {
